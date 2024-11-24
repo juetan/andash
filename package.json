@@ -1,0 +1,64 @@
+{
+  "name": "andash",
+  "version": "0.0.1",
+  "description": "a universal esm lib!",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "type": "module",
+  "author": "juetan <contact@juetan.cn>",
+  "license": "MIT",
+  "keywords": [
+    "andash"
+  ],
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./axios": {
+      "types": "./dist/axios.d.mts",
+      "default": "./dist/axios.mjs"
+    },
+    "./dayjs": {
+      "types": "./dist/dayjs.d.mts",
+      "default": "./dist/dayjs.mjs"
+    },
+    "./mitt": {
+      "types": "./dist/mitt.d.mts",
+      "default": "./dist/mitt.mjs"
+    },
+    "./hookable": {
+      "types": "./dist/hookable.d.mts",
+      "default": "./dist/hookable.mjs"
+    },
+    "./hash": {
+      "types": "./dist/hash.d.mts",
+      "default": "./dist/hash.mjs"
+    },
+    "./nprogress": {
+      "types": "./dist/nprogress.d.mts",
+      "default": "./dist/nprogress.mjs"
+    },
+    "./qrcode": {
+      "types": "./dist/qrcode.d.mts",
+      "default": "./dist/qrcode.mjs"
+    }
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@std/encoding": "npm:@jsr/std__encoding@^1.0.5",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
+    "defu": "^6.1.4",
+    "hookable": "^5.5.3",
+    "mitt": "^3.0.1",
+    "ohash": "^1.1.4",
+    "radash": "^12.1.0",
+    "uqr": "latest"
+  }
+}
