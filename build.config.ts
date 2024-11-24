@@ -1,25 +1,15 @@
 import { defineBuildConfig } from "unbuild"
 
 export default defineBuildConfig([
-  // {
-  //   entries: [
-  //     {
-  //       builder: "mkdist",
-  //       input: "./src/css/",
-  //       pattern: "*.scss"
-  //     }
-  //   ],
-  //   failOnWarn: false
-  // },
   {
     entries: [
-      "src/index.ts",
+      "src/index",
       "src/dayjs",
       "src/axios",
       "src/hash",
       "src/qrcode",
-      "src/mitt",
       "src/hookable",
+      "src/ofetch",
       {
         input: "src/nprogress/nprogress",
         name: "nprogress"
@@ -27,9 +17,20 @@ export default defineBuildConfig([
       {
         input: "src/nprogress/",
         pattern: "*.css"
-      },
+      }
     ],
     declaration: "node16",
     failOnWarn: false
   }
+  // todo
+  // {
+  //   entries: ["src/index"],
+  //   rollup: {
+  //     esbuild: {
+  //       minify: true
+  //     }
+  //   },
+  //   declaration: "node16",
+  //   failOnWarn: false
+  // }
 ])

@@ -26,9 +26,9 @@
       "types": "./dist/dayjs.d.mts",
       "default": "./dist/dayjs.mjs"
     },
-    "./mitt": {
-      "types": "./dist/mitt.d.mts",
-      "default": "./dist/mitt.mjs"
+    "./ofetch": {
+      "types": "./dist/ofetch.d.mts",
+      "default": "./dist/ofetch.mjs"
     },
     "./hookable": {
       "types": "./dist/hookable.d.mts",
@@ -51,14 +51,17 @@
     "build": "unbuild"
   },
   "dependencies": {
-    "@std/encoding": "npm:@jsr/std__encoding@^1.0.5",
     "axios": "^1.7.7",
     "dayjs": "^1.11.13",
     "defu": "^6.1.4",
     "hookable": "^5.5.3",
-    "mitt": "^3.0.1",
+    "ofetch": "^1.4.1",
     "ohash": "^1.1.4",
     "radash": "^12.1.0",
     "uqr": "latest"
+  },
+  "devDependencies": {
+    "changelogen": "^0.5.7",
+    "unbuild": "^2.0.0"
   }
 }
